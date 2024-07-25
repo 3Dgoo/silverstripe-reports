@@ -125,6 +125,9 @@ class ReportAdmin extends LeftAndMain implements PermissionProvider
                 return $this->httpError(404);
             }
             $this->reportObject = $allReports[$this->reportClass];
+            if (!$this->reportObject->canView()) {
+                return Security::permissionFailure($this);
+            }
         }
 
         // Delegate to sub-form
