@@ -24,7 +24,6 @@
         "silverstripe/framework": "^6",
         "silverstripe/admin": "^3",
         "silverstripe/versioned": "^3",
-        "silverstripe/cms": "^6",
         "silverstripe/config": "^3",
         "silverstripe/assets": "^3"
     },
